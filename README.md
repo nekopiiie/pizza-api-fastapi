@@ -35,3 +35,11 @@ POST /couriers/ - добавить курьера
 GET /payments/ - получить список платежей
 POST /payments/ - создать платёж
 ```
+
+## Дамп базы данных
+### Используемая СУБД: PostgreSQL 15
+Файл `pizza_db_dump.sql` содержит резервную копию базы данных с тестовыми данными.
+
+**Восстановление:**
+```bash
+psql -U postgres -d pizza_db -f pizza_db_dump.sql
